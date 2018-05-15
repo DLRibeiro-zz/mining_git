@@ -124,6 +124,12 @@ class GitProject
 				count+=1
 			end
 			puts "Ending execution: Projeto #{projectName} - Merges = #{count}" #debugging...
+			
+			#generate seleted project list for input in modularity extractor step
+			File.open(localPath+pathResults+"projectList.csv", 'a') do |f2|
+				# use "\n" para duas linhas de texto
+				f2.puts "#{getProjectName}"
+			end
 		end
 
 		return dataList
@@ -146,6 +152,12 @@ class GitProject
 					file.puts "#{randomDataMerge}"
 				end
 				puts "Ending generate random file for #{projectName} project - Merges = #{randomDataList.length}" #debugging...
+
+				#generate seleted project list for input in modularity extractor step
+				File.open(localPath+pathResults+"projectList.csv", 'a') do |f2|
+					# use "\n" para duas linhas de texto
+					f2.puts "#{getProjectName}"
+				end
 			end
 			#generate summary of random mergeScenario list
 			totalMerges = dataList.length
