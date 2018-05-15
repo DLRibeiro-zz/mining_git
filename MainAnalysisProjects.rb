@@ -114,7 +114,6 @@ project = MainAnalysisProjects.new(parameters[0], parameters[1], parameters[2], 
 #puts "Login User[#{project.getLoginUser()}]"
 #puts "Password User[#{project.getPasswordUser()}]"
 #puts "Path Resuts[#{project.getPathResults()}]"
-#puts "Caminho completo = #{project.getLocalPath+project.getPathResults}"
 # end debugging...
 
 project.runAnalysis()
