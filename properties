@@ -1,0 +1,6 @@
+login=<yourGithubLogin>
+password=<123456>
+pathResultsAllMerges=</Results/allMerges/>
+pathResultsRandomizedMerges=</Results/randomizedMerges/>
+minTotalMerges=<100>
+sampleSize=<70>
